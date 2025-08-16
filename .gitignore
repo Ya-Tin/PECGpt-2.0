@@ -7,8 +7,6 @@ __pycache__/
 *.so
 
 #faiss folder
-faiss_index/
-query_index/
 
 # Distribution / packaging
 .Python

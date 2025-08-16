@@ -1,0 +1,214 @@
+#abd76ff5 {
+    font-size: 4rem;
+    font-weight: 600;
+    background-image: linear-gradient(45deg,  #ff6d4f, #ffffff);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+}
+[data-testid="stChatMessageAvatarAssistant"]{
+    background-image: url('https://avatars.githubusercontent.com/u/54832562?s=280&v=4');
+    opacity: 100;
+    z-index: 3;
+}
+
+[data-testid="stDecoration"] {background: #0b0909;}
+[data-testid="stAppViewContainer"]{
+    background-color: #0b0909;
+    opacity: 90;
+}
+[data-testid="stSidebarContent"]{
+    background-color: #161716;
+    
+
+}
+[data-testid="stHeader"]{
+    background-color: #0b090900;
+}
+[data-testid="stBottomBlockContainer"]{
+    background-color: #0b0909;
+}
+/* .st-emotion-cache-hzygls{
+    background-color: #000000;
+    opacity: 90;
+} */
+
+
+[data-testid="stBaseLinkButton-secondary"] {
+    background-color: #7073d8;
+    border-radius: 100px;
+    box-shadow: rgba(44, 80, 187, 0.2) 0 -25px 18px -14px inset,rgba(44, 106, 187, 0.15) 0 1px 2px,rgba(44, 70, 187, 0.15) 0 2px 4px,rgba(44, 149, 187, 0.15) 0 4px 8px,rgba(44, 108, 187, 0.15) 0 8px 16px,rgba(44, 63, 187, 0.15) 0 16px 32px;
+    color: rgb(195, 202, 205);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+[data-testid="stBaseLinkButton-secondary"]:hover{
+box-shadow: rgba(255, 9, 234, 0.236) 0 -25px 18px -14px inset,rgba(255, 9, 234, 0.236) 0 1px 2px,rgba(255, 9, 234, 0.236) 0 2px 4px,rgba(255, 9, 234, 0.236) 0 4px 8px,rgba(255, 9, 234, 0.236) 0 8px 16px,rgba(255, 9, 234, 0.236) 0 16px 32px;
+transform: scale(1.05) rotate(-1deg);
+color: white;
+}
+.st-key-green button {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,
+                rgba(44, 187, 99, .15) 0 1px 2px,
+                rgba(44, 187, 99, .15) 0 2px 4px,
+                rgba(44, 187, 99, .15) 0 4px 8px,
+                rgba(44, 187, 99, .15) 0 8px 16px,
+                rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: none;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    animation: pulse 2s infinite;
+}
+
+.st-key-green button p {
+    font-size: 16px;
+}
+
+/* Hover effect */
+.st-key-green button:hover {
+    background-color: #45a049; /* Darker green */
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset,
+                rgba(44, 187, 99, .25) 0 1px 2px,
+                rgba(44, 187, 99, .25) 0 2px 4px,
+                rgba(44, 187, 99, .25) 0 4px 8px,
+                rgba(44, 187, 99, .25) 0 8px 16px,
+                rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+    color: rgb(0, 0, 0);
+}
+
+.st-key-green button:hover p {
+    color: #FFD700; /* Gold color */
+}
+
+/* Override focus states */
+.st-key-green button:focus {
+    background-color: #45a049;
+    border: none;
+}
+
+.st-key-green button:focus p {
+    color: #FFD700;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(76, 175, 80, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+    }
+}
+
+
+.st-key-red button {
+    background-color: #d48282;
+    border-radius: 100px;
+    box-shadow: rgba(187, 44, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.15) 0 1px 2px,rgba(187, 44, 44, 0.15) 0 2px 4px,rgba(187, 44, 44, 0.15) 0 4px 8px,rgba(187, 44, 44, 0.15) 0 8px 16px,rgba(187, 44, 44, 0.15) 0 16px 32px;
+    color: rgb(128, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+.st-key-red:hover button{
+box-shadow: rgba(187, 44, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.25) 0 1px 2px,rgba(187, 44, 44, 0.25) 0 2px 4px,rgba(187, 44, 44, 0.25) 0 4px 8px,rgba(187, 44, 44, 0.25) 0 8px 16px,rgba(187, 44, 44, 0.25) 0 16px 32px;
+transform: scale(1.05) rotate(-1deg);
+color: white;
+}
+
+.st-key-red2 button {
+background-color: #a41818;
+border-radius: 100px;
+box-shadow: rgba(187, 44, 44, 0.2) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.15) 0 1px 2px,rgba(187, 44, 44, 0.15) 0 2px 4px,rgba(187, 44, 44, 0.15) 0 4px 8px,rgba(187, 44, 44, 0.15) 0 8px 16px,rgba(187, 44, 44, 0.15) 0 16px 32px;
+color: rgb(159, 144, 144);
+cursor: pointer;
+display: inline-block;
+font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+padding: 7px 20px;
+text-align: center;
+text-decoration: none;
+transition: all 250ms;
+border: 0;
+font-size: 16px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+.st-key-red2:hover button{
+box-shadow: rgba(187, 44, 44, 0.35) 0 -25px 18px -14px inset,rgba(187, 44, 44, 0.25) 0 1px 2px,rgba(187, 44, 44, 0.25) 0 2px 4px,rgba(187, 44, 44, 0.25) 0 4px 8px,rgba(187, 44, 44, 0.25) 0 8px 16px,rgba(187, 44, 44, 0.25) 0 16px 32px;
+transform: scale(1.05) rotate(-1deg);
+color: white;
+}
+.blanki {
+    display: flex;
+    height: 50vh;
+}
+
+
+.luvacm {
+    font-size: 16px;
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+.uppdf {
+    background-color: #00ff1108;
+    padding: 10px 10px;
+    border-radius: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+.donepdf {
+    background-color: #45a049b0;
+    padding: 10px 10px;
+    border-radius: 100px;
+    max-width: 80px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+}
+
+.intro {
+    color: #ffffff;
+    font-family: 'Verdana', sans-serif;
+}

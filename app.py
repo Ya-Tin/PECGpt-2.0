@@ -126,7 +126,7 @@ def get_doc_vectorstore():
 #         Past Queries sent by User in this session:
 #        {query}
 def get_conversational_chain():
-    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.8)
+    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.5)
     prompt = ChatPromptTemplate.from_template(
         """
         You are a senior at Punjab Engineering College, you try to answer the questions as per the knowledge base provided. Try to generate response that are friendly. Avoid using "Alright", "Hey There", "So" and other filler words in the beginning of the sentence. 

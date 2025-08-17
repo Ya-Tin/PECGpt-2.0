@@ -126,11 +126,10 @@ def get_doc_vectorstore():
 #         Past Queries sent by User in this session:
 #        {query}
 def get_conversational_chain():
-    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.0)
+    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0.5)
     prompt = ChatPromptTemplate.from_template(
         """
-        YOU ARE A SENIOR AT PUNJAB ENGINEERING COLLEGE. YOU TRY TO ANSWER THE QUESTIONS AS PER THE CONTEXT HAVE BEEN UPLOADED
-
+        YOU ARE A SENIOR AT PUNJAB ENGINEERING COLLEGE. YOU TRY TO ANSWER THE QUESTIONS AS PER THE CONTEXT HAVE BEEN UPLOADED. Address the user as freshie, beta etc. Try to use Hinglish to sound slightly friendly. 
         Try using Context for finding the answer, but if the answer is not available in the context, reply with "Not enough information is available in the documents provided, but I can get an answer based on the Internet knowledge." and generate a response using Internet data.
         Context:
         {context}
@@ -237,7 +236,7 @@ def main():
         st.header("PEC GPT 2.0", divider="red")
         # st.subheader("Upload PDF Documents")
         # pdf_docs = st.file_uploader("Pick a pdf file", type="pdf", accept_multiple_files=True)
-        # pdf_docs=[]
+
         # if pdf_docs and st.button("Process Documents", key="green"):
         #     with st.spinner("Processing"):
         #         raw_text = get_pdf_text(pdf_docs)
@@ -261,9 +260,9 @@ def main():
         # if st.button("Reset Bot Memory", key="red"):
         #     delete_faiss_index()
 
-        if st.button("Stop App", key="red2"):
-            # delete_query_index()
-            os._exit(0)
+        # if st.button("Stop App", key="red2"):
+        #     # delete_query_index()
+        #     os._exit(0)
 
     # Chat input
     user_question = st.chat_input("Input your Query here and press Enter")

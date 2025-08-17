@@ -224,7 +224,7 @@ def main():
     # Header & intro
     st.header("PEC GPT 2.0", divider="red")
     st.markdown(
-        '<div class="intro">Welcome to PEC GPT 2.0! designed by PEC ACM to help you with your queries based on PEC Chandigarh (Deemed to be University 💔🥀🥀) \n\n It will try to answer your queries with it\'s best ability.',
+        '<div class="intro">Welcome to PEC GPT 2.0! designed by PEC ACM to help you with your queries based on PEC Chandigarh (Deemed to be University) \n\n It will try to answer your queries with it\'s best ability.',
         unsafe_allow_html=True,
     )
 

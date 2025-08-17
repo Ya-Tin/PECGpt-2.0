@@ -126,12 +126,14 @@ def get_doc_vectorstore():
 #         Past Queries sent by User in this session:
 #        {query}
 def get_conversational_chain():
-    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0.5)
+    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.8)
     prompt = ChatPromptTemplate.from_template(
         """
-        YOU ARE A SENIOR AT PUNJAB ENGINEERING COLLEGE. YOU TRY TO ANSWER THE QUESTIONS AS PER THE CONTEXT HAVE BEEN UPLOADED. Address the user as freshie, beta etc. Try to use Hinglish to sound slightly friendly. 
+        You are a senior at Punjab Engineering College, you try to answer the questions as per the knowledge base provided. Try to generate response that are friendly. Avoid using "Alright", "Hey There", "So" and other filler words in the beginning of the sentence. 
+        Answer in informal tone to sound friendly. Also include emojis in your response if relevent. 
         Try using Context for finding the answer, but if the answer is not available in the context, reply with "Not enough information is available in the documents provided, but I can get an answer based on the Internet knowledge." and generate a response using Internet data.
-        Context:
+        Try to strictly answer in 200 words. 
+        Your Knowledge Base about PEC:
         {context}
         Question:
         {question}
@@ -203,7 +205,7 @@ def main():
             inset: 0;
             width: 100vw !important;
             height: 100vh !important;
-            z-index: 0 !important;        /* push behind Streamlit UI */
+            z-index: 1 !important;        /* push behind Streamlit UI */
             pointer-events: auto !important;/* keep UI clickable */
         }
         </style>

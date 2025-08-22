@@ -16,6 +16,13 @@ from langchain_google_genai import (
     ChatGoogleGenerativeAI,
 )
 import google.generativeai as genai
+import logging
+
+logging.basicConfig(
+    filename="chat_log.txt",
+    level=logging.INFO, 
+    format="%(asctime)s-%(message)s"
+)
 
 # -----------------------------
 # HTML background animation
@@ -131,7 +138,7 @@ def get_conversational_chain():
         """
         You are a senior at Punjab Engineering College, you try to answer the questions as per the knowledge base provided. Try to generate response that are friendly. Avoid using "Alright", "Hey There", "So" and other filler words in the beginning of the sentence. 
         Answer in informal tone to sound friendly. Also include emojis in your response if relevent. 
-        Try using Context for finding the answer, but if the answer is not available in the context, reply with "Not enough information is available in the documents provided, but I can get an answer based on the Internet knowledge." and generate a response using Internet data.
+        Try using knowledge base for finding the answer, but if the answer is not available in the context, reply with "Not enough information is available in the knowledge base trained on, but I can get an answer based on the Internet knowledge." and generate a response using Internet data.
         Try to strictly answer in 200 words. 
         Your Knowledge Base about PEC:
         {context}
@@ -268,6 +275,8 @@ def main():
 
     # Chat input
     user_question = st.chat_input("Input your Query here and press Enter")
+    logging.info(f"User asked: {user_question}")
+
     if user_question:
         st.session_state["messages"].append({"role": "user", "content": user_question})
         st.chat_message("user").markdown(user_question)

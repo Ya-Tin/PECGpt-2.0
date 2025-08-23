@@ -243,24 +243,24 @@ def main():
     with st.sidebar:
         st.markdown('<img src="https://avatars.githubusercontent.com/u/54832562?s=280&v=4" width=80 >', unsafe_allow_html=True)
         st.header("PEC GPT 2.0", divider="red")
-        # st.subheader("Upload PDF Documents")
-        # pdf_docs = st.file_uploader("Pick a pdf file", type="pdf", accept_multiple_files=True)
+        st.subheader("Upload PDF Documents")
+        pdf_docs = st.file_uploader("Pick a pdf file", type="pdf", accept_multiple_files=True)
 
-        # if pdf_docs and st.button("Process Documents", key="green"):
-        #     with st.spinner("Processing"):
-        #         raw_text = get_pdf_text(pdf_docs)
-        #         if raw_text.strip():
-        #             text_chunks = chonky(raw_text)
-        #             if text_chunks:
-        #                 get_vectorstore(text_chunks)
-        #                 st.markdown('<div class="donepdf">Done</div>', unsafe_allow_html=True)
-        #             else:
-        #                 st.warning("No text chunks were created from the uploaded PDFs.")
-        #         else:
-        #             st.warning("No text could be extracted from the uploaded PDFs.")
+        if pdf_docs and st.button("Process Documents", key="green"):
+            with st.spinner("Processing"):
+                raw_text = get_pdf_text(pdf_docs)
+                if raw_text.strip():
+                    text_chunks = chonky(raw_text)
+                    if text_chunks:
+                        get_vectorstore(text_chunks)
+                        st.markdown('<div class="donepdf">Done</div>', unsafe_allow_html=True)
+                    else:
+                        st.warning("No text chunks were created from the uploaded PDFs.")
+                else:
+                    st.warning("No text could be extracted from the uploaded PDFs.")
 
-        # if not pdf_docs:
-        #     st.markdown('<div class="uppdf">Please upload a PDF file to start</div>', unsafe_allow_html=True)
+        if not pdf_docs:
+            st.markdown('<div class="uppdf">Please upload a PDF file to start</div>', unsafe_allow_html=True)
 
         st.markdown('<div class="blanki"></div>', unsafe_allow_html=True)
         st.markdown('<div class="luvacm">Made with ❤️ by PEC ACM </div>', unsafe_allow_html=True)

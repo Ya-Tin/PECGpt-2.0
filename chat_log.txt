@@ -1,4 +1,0 @@
-2025-08-22 19:50:11,425-User asked: None
-2025-08-22 19:50:20,395-User asked: Hello World
-2025-08-22 19:50:20,626-Loading faiss with AVX2 support.
-2025-08-22 19:51:39,975-Successfully loaded faiss with AVX2 support.
